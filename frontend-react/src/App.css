@@ -1,0 +1,61 @@
+/* Estilos de la página TechSolve */
+
+.paso-numero {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+/* Animación simple para que las tarjetas de casos de éxito
+   se vean un poco al pasar el mouse por encima */
+.card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Animación de aparición para el texto del hero */
+header h1,
+header p {
+  animation: aparecer 1s ease-in;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsivo */
+
+@media (max-width: 576px) {
+  header {
+    text-align: center;
+  }
+
+  .paso-numero {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1400px;
+  }
+}
